@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #afe872;
+    transition: 2s;
+}
+
+.slide{
+    background: #33254d;
+}
+
+.container{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background:rgba(0,0,0,0.125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container .box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    
+}
+
+.container .box h2{
+    color: blanchedalmond;
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+.container .box .button{
+    cursor: pointer;
+    padding: 20px 30px;
+    background: #afe872;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 20px;
+    
+}
+
+.formBx{
+    position: absolute;
+    left: 50px;
+    width: 350px;
+    height: 480px;
+    z-index: 1000;
+    transition: 0.5s;
+    background: #afe872;
+    overflow:hidden;
+    box-shadow: 0.5px 25px rgba(0,0,0,0.125);
+    transition-delay: 0.5s;
+}
+
+.slide .container .formBx{
+    left: 400px;
+}
+
+.formBx .form{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    background: #afe872;
+
+}
+
+.formBx .form.signupForm{
+    top: 100%;
+    transition: 0s;
+
+}
+
+.slide .formBx .form.signupForm{
+    transition: 1s;
+    top: 0;
+}
+
+.formBx .form.form.signupForm{
+    top: 0;
+    transition: 1s;
+
+}
+
+.formBx .form form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    width: 100%;
+
+}
+
+.formBx .form form h3{
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    
+}
+
+.formBx .form form input{
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #333;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+
+}
+
+.formBx .form form input[type="submit"]{
+    background:#124612;
+    border: none;
+    color: bisque;
+    max-width: 100px;
+    cursor: pointer;
+    font-weight: 500;
+
+}
+
+
+.formBx .signupForm form input[type="submit"]{
+    background: #0d2105;
+
+}
+
+.formBx form a{
+    color: #333;
+    letter-spacing: 0.05em;
+    font-size: 0.8em;
+
+}
+
+
+
+
+
